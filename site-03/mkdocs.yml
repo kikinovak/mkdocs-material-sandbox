@@ -1,0 +1,38 @@
+---  # mkdocs.yml
+
+site_name: Solutions informatiques durables
+site_url: http://localhost:8000/mysite
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: deep orange
+  logo: assets/microlinux-logo.png
+  favicon: assets/favicon.png
+  font:
+    text: Red Hat Text
+    code: Red Hat Mono
+  language: fr
+extra_css:
+  - css/extra.css
+extra:
+  consent:
+    title: Accepter les cookies ?
+    description: >-
+      Ce site utilise des cookies pour reconnaître vos visites répétées et vos
+      préférences, notamment pour mesurer l'efficacité de la documentation et
+      pour savoir si vous trouvez bien les informations que vous y recherchez.
+      En donnant votre consentement, vous participez à améliorer cette
+      documentation.
+    actions:
+      - accept
+      - manage
+      - reject
+plugins:
+  - privacy
+copyright: >
+  Copyright &copy; 2025 Nicolas Kovacs –
+  <a href="#__consent">Modifier le paramétrage des cookies</a>
+
+...
