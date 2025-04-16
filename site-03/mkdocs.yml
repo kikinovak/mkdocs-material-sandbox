@@ -14,21 +14,23 @@ theme:
     text: Red Hat Text
     code: Red Hat Mono
   language: fr
+  features:
+    # When instant loading is enabled, clicks on all internal links will be
+    # intercepted and dispatched via XHR without fully reloading the page.
+    - navigation.instant
+    # When anchor tracking is enabled, the URL in the address bar is
+    # automatically updated with the active anchor as highlighted in the table
+    # of contents.
+    - navigation.tracking
+    # When tabs are enabled, top-level sections are rendered in a menu layer
+    # below the header for viewports above 1220px, but remain as-is on mobile.
+    - navigation.tabs
+    # A back-to-top button can be shown when the user, after scrolling down,
+    # starts to scroll up again. It's rendered centered and just below the
+    # header.
+    - navigation.top
 extra_css:
   - css/extra.css
-extra:
-  consent:
-    title: Accepter les cookies ?
-    description: >-
-      Ce site utilise des cookies pour reconnaître vos visites répétées et vos
-      préférences, notamment pour mesurer l'efficacité de la documentation et
-      pour savoir si vous trouvez bien les informations que vous y recherchez.
-      En donnant votre consentement, vous participez à améliorer cette
-      documentation.
-    actions:
-      - accept
-      - manage
-      - reject
 plugins:
   - privacy
 copyright: >
